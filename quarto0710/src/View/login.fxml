@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="280.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <TextField fx:id="txtId" layoutX="50.0" layoutY="250.0" prefHeight="25.0" prefWidth="180.0" promptText="아이디" />
+      <PasswordField fx:id="txtPass" layoutX="50.0" layoutY="295.0" prefHeight="25.0" prefWidth="180.0" promptText="비밀번호" />
+      <Button fx:id="btnOk" layoutX="50.0" layoutY="332.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: #493232;" text="로그인" textFill="#d7cbcb">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnJoin" layoutX="67.0" layoutY="372.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="73.0" style="-fx-background-color: yellow;" text="회원가입" />
+      <Button fx:id="btnDel" layoutX="140.0" layoutY="372.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: yellow;" text="취소" />
+      <ImageView fitHeight="205.0" fitWidth="253.0" layoutX="21.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/images/loginIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

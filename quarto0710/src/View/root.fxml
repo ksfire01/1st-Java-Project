@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+<StackPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RootController">
+   <children>
+      <ImageView fitHeight="688.0" fitWidth="454.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../bin/images/background.jpg" />
+         </image>
+      </ImageView>
+      <VBox fx:id="mainVbox">
+         <children>
+            <HBox>
+               <children>
+                  <Label fx:id="yourInfo" prefHeight="99.0" prefWidth="239.0" style="-fx-background-color: black; -fx-background-radius: 20; -fx-opacity: 0.7;" text="상대방의 정보를 보려면 여기를 클릭하세요!" textFill="#d7cbcb">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </Label>
+                  <HBox fx:id="yourHorseBoard" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <VBox>
+               <children>
+                  <VBox alignment="CENTER" prefHeight="67.0" prefWidth="450.0">
+                     <children>
+                        <FlowPane fx:id="anchorPane" hgap="3.0" maxWidth="370.0" minWidth="150.0" prefHeight="250.0" prefWidth="150.0" vgap="3.0">
+                           <children>
+                              <ImageView fx:id="cfdt" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../bin/images/circleFilledDarkThin.PNG" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="chdt" fitHeight="35.0" fitWidth="35.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../bin/images/circleHoleDarkThin.PNG" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="cfdb" fitHeight="50.0" fitWidth="50.0" layoutX="53.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../bin/images/circleFilledDarkBold.PNG" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="chdb" fitHeight="50.0" fitWidth="50.0" layoutX="96.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../bin/images/circleHoleDarkBold.PNG" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="cfbt" fitHeight="35.0" fitWidth="35.0" layoutX="10.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../bin/images/circleFilledBrightThin.PNG" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="chbt" fitHeight="35.0" fitWidth="35.0" layoutX="53.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../bin/images/circleHoleBrightThin.PNG" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="cfbb" fitHeight="50.0" fitWidth="50.0" layoutX="96.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../bin/images/circleFilledBrightBold.PNG" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="chbb" fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../bin/images/circleHoleBrightBold.PNG" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="sfdt" fitHeight="50.0" fitWidth="30.0" layoutX="53.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../bin/images/squareFilledDarkThin.PNG" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="shdt" fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../bin/images/squareHoleDarkThin.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="sfdb" fitHeight="47.0" fitWidth="47.0" layoutX="53.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../bin/images/squareFilledDarkBold.PNG" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="shdb" fitHeight="47.0" fitWidth="47.0" layoutX="96.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../bin/images/squareHoleDarkBold.PNG" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="sfbt" fitHeight="30.0" fitWidth="30.0" layoutX="139.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../bin/images/squareFilledBrightThin.PNG" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="shbt" fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../bin/images/squareHoleBrightThin.PNG" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="sfbb" fitHeight="47.0" fitWidth="47.0" layoutX="53.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../bin/images/squareFilledBrightBold.PNG" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="shbb" fitHeight="47.0" fitWidth="47.0" layoutX="96.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../bin/images/squareHoleBrightBold.PNG" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </FlowPane>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="330.0" prefWidth="450.0" spacing="10.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <GridPane fx:id="board" alignment="CENTER" gridLinesVisible="true" prefHeight="300.0" prefWidth="300.0" style="-fx-border-color: #493232;" HBox.hgrow="NEVER">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <HBox fx:id="hbox00" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+                              <HBox fx:id="hbox10" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" />
+                              <HBox fx:id="hbox20" alignment="CENTER" layoutX="60.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" />
+                              <HBox fx:id="hbox30" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" />
+                              <HBox fx:id="hbox01" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                              <HBox fx:id="hbox11" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <HBox fx:id="hbox21" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <HBox fx:id="hbox31" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                              <HBox fx:id="hbox02" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2" />
+                              <HBox fx:id="hbox12" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <HBox fx:id="hbox22" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <HBox fx:id="hbox32" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                              <HBox fx:id="hbox03" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3" />
+                              <HBox fx:id="hbox13" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <HBox fx:id="hbox23" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.vgrow="NEVER" />
+                              <HBox fx:id="hbox33" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox>
+               <children>
+                  <VBox fx:id="myHorseBoard" alignment="CENTER" prefHeight="67.0" prefWidth="450.0" />
+                  <HBox alignment="CENTER" prefHeight="56.0" prefWidth="450.0" spacing="5.0">
+                     <children>
+                        <Button fx:id="btnInit" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #493232;" text="수정" textFill="#d7cbcb" />
+                        <Button fx:id="btnSendHorse" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #493232;" text="말넘기기" textFill="#d7cbcb" />
+                        <Button fx:id="btnQuarto" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #493232;" text="QUARTO!" textFill="#d7cbcb" />
+                        <Button fx:id="btnTurnOver" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #493232;" text="턴넘기기" textFill="#d7cbcb" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <Label fx:id="gameStart" alignment="CENTER" contentDisplay="CENTER" prefHeight="683.0" prefWidth="454.0" text="Game Start!" textFill="#493232">
+         <font>
+            <Font name="Lucida Sans Italic" size="64.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnResult" mnemonicParsing="false" prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #493232; -fx-opacity: 1;" text="확인" textFill="#d7cbcb">
+         <font>
+            <Font name="Lucida Sans Italic" size="48.0" />
+         </font>
+      </Button>
+   </children>
+</StackPane>

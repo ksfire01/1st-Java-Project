@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<StackPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RankController">
+   <children>
+      <AnchorPane fx:id="anchorPane" prefHeight="486.0" prefWidth="500.0" style="-fx-background-color: #493232;">
+         <children>
+            <TextField fx:id="txtId" layoutX="19.0" layoutY="408.0" prefHeight="24.0" prefWidth="255.0" promptText="아이디를 입력해주세요" />
+            <Label alignment="CENTER" layoutY="1.0" prefHeight="80.0" prefWidth="500.0" style="-fx-background-color: #493232;" text="Rank" textFill="YELLOW">
+               <font>
+                  <Font name="Lucida Sans Italic" size="64.0" />
+               </font>
+            </Label>
+            <Label fx:id="rankView" alignment="TOP_CENTER" layoutX="19.0" layoutY="78.0" opacity="0.18" prefHeight="317.0" prefWidth="169.0" style="-fx-opacity: 0.3; -fx-background-color: black;" text="Rank" textFill="WHITE">
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </Label>
+            <Button fx:id="btnConfirm" layoutX="277.0" layoutY="407.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="72.0" style="-fx-background-color: #d7cbcb;" text="확인" textFill="#493232" />
+            <Button fx:id="btnExit" layoutX="380.0" layoutY="406.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="110.0" style="-fx-background-color: #d7cbcb;" text="돌아가기" textFill="#493232" />
+            <Label fx:id="rankView1" alignment="TOP_LEFT" layoutX="188.0" layoutY="78.0" opacity="0.18" prefHeight="317.0" prefWidth="301.0" style="-fx-opacity: 0.3; -fx-background-color: black;" text="Rank" textFill="WHITE">
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="label" prefHeight="487.0" prefWidth="509.0" />
+   </children>
+</StackPane>

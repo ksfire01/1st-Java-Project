@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.WaitingController">
+   <children>
+      <Polygon fill="#493232" layoutX="375.0" layoutY="135.0" scaleX="2.5" scaleY="2.5" scaleZ="2.5" smooth="false" stroke="BLACK" strokeType="INSIDE">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="-60.0" />
+        </points>
+      </Polygon>
+      <Polygon fill="#493232" layoutX="250.0" layoutY="385.0" scaleX="2.5" scaleY="2.5" scaleZ="2.5" stroke="BLACK" strokeType="INSIDE">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="-60.0" />
+        </points>
+      </Polygon>
+      <Polygon fill="#493232" layoutX="125.0" layoutY="135.0" scaleX="2.5" scaleY="2.5" scaleZ="2.5" stroke="BLACK" strokeType="INSIDE">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="-60.0" />
+        </points>
+      </Polygon>
+      <Polygon fx:id="btnRank" fill="YELLOW" layoutX="125.0" layoutY="385.0" rotate="180.0" scaleX="2.5" scaleY="2.5" scaleZ="2.5" stroke="BLACK" strokeType="INSIDE">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="-60.0" />
+        </points>
+      </Polygon>
+      <Polygon fx:id="btnExit" fill="YELLOW" layoutX="375.0" layoutY="385.0" rotate="180.0" scaleX="2.5" scaleY="2.5" scaleZ="2.5" stroke="BLACK" strokeType="INSIDE">
+         <points>
+            <Double fx:value="-50.0" />
+            <Double fx:value="40.0" />
+            <Double fx:value="50.0" />
+            <Double fx:value="40.0" />
+            <Double fx:value="0.0" />
+            <Double fx:value="-60.0" />
+         </points>
+      </Polygon>
+      <Polygon fx:id="btnStart" fill="YELLOW" layoutX="250.0" layoutY="135.0" rotate="180.0" scaleX="2.5" scaleY="2.5" scaleZ="2.5" smooth="false" stroke="BLACK" strokeType="INSIDE">
+         <points>
+            <Double fx:value="-50.0" />
+            <Double fx:value="40.0" />
+            <Double fx:value="50.0" />
+            <Double fx:value="40.0" />
+            <Double fx:value="0.0" />
+            <Double fx:value="-60.0" />
+         </points>
+      </Polygon>
+      <Label fx:id="startTxt" layoutX="192.0" layoutY="31.0" prefHeight="70.0" prefWidth="120.0" text="START">
+         <font>
+            <Font name="Bell MT Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="exitTxt" layoutX="326.0" layoutY="281.0" prefHeight="70.0" prefWidth="114.0" text="EXIT">
+         <font>
+            <Font name="Bell MT Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="rankTxt" layoutX="65.0" layoutY="281.0" prefHeight="70.0" prefWidth="120.0" text="RANK">
+         <font>
+            <Font name="Bell MT Italic" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

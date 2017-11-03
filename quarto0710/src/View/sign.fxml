@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox alignment="CENTER_LEFT" prefHeight="98.0" prefWidth="307.0" style="-fx-background-color: black; -fx-background-radius: 20; -fx-opacity: 0.7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView id="imgMessage" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+      <Label id="lblMessage" alignment="CENTER" contentDisplay="CENTER" style="-fx-text-fill: white;" text="공지사항을 알려드리겠습니다.">
+         <HBox.margin>
+            <Insets right="5.0" />
+         </HBox.margin></Label>
+   </children>
+</HBox>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CreateController">
+   <children>
+      <Label layoutX="21.0" layoutY="43.0" text="아이디" textFill="#4a3232" />
+      <TextField fx:id="txtId" layoutX="79.0" layoutY="39.0" prefHeight="23.0" prefWidth="190.0" />
+      <Label layoutX="21.0" layoutY="86.0" text="비밀번호" />
+      <PasswordField fx:id="txtPass" layoutX="79.0" layoutY="82.0" prefHeight="23.0" prefWidth="190.0" />
+      <Label layoutX="21.0" layoutY="129.0" text="이름" />
+      <TextField fx:id="txtName" layoutX="79.0" layoutY="125.0" prefHeight="23.0" prefWidth="190.0" />
+      <Label layoutX="21.0" layoutY="176.0" text="별명" />
+      <TextField fx:id="txtNick" layoutX="79.0" layoutY="172.0" prefHeight="23.0" prefWidth="190.0" />
+      <Button fx:id="btnOk1" layoutX="100.0" layoutY="213.0" mnemonicParsing="false" style="-fx-background-color: #493232;" text="확인" textFill="#d7cbcb" />
+      <Button fx:id="btnExit" layoutX="166.0" layoutY="213.0" mnemonicParsing="false" style="-fx-background-color: #493232;" text="취소" textFill="#d7cbcb" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</AnchorPane>
